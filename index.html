@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AI Sovereignty Network — Join the Movement</title>
+<meta name="description" content="A closed community of African ministers, central bank governors, regulators, enterprise leaders and innovators building sovereign AI ecosystems across 54 African nations.">
+<link rel="canonical" href="https://www.aisovereignty.network">
+<meta property="og:title" content="AI Sovereignty Network">
+<meta property="og:description" content="Africa's premier AI sovereignty leadership community. Ministers, central bank governors, regulators and enterprise leaders building sovereign AI ecosystems.">
+<meta property="og:url" content="https://www.aisovereignty.network">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black:#0A0B0D;--dark:#111316;--dark2:#191C21;--dark3:#1F2329;
+  --cream:#F2EDE4;--cream2:#E8E2D6;--white:#FAFAF8;
+  --gold:#C9A84C;--gold2:#E2C875;--gold3:#8A6B28;
+  --teal:#1A4A4A;--teal2:#0D3333;--muted:#8B94A0;
+  --border:#252B33;--border2:#2E3540;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'DM Sans',system-ui,sans-serif;
+  --display:'Bebas Neue',sans-serif;
+  --max:1200px;--r:4px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{background:var(--black);color:var(--cream);font-family:var(--sans);line-height:1.7;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+::selection{background:var(--gold);color:var(--black);}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-thumb{background:var(--gold3);}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:60px;display:flex;align-items:center;background:rgba(10,11,13,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 40px;width:100%;display:flex;align-items:center;justify-content:space-between;}
+.nav-brand{font-family:var(--display);font-size:18px;letter-spacing:.06em;color:var(--white);}
+.nav-brand span{color:var(--gold);}
+.nav-domain{font-family:var(--sans);font-size:10px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);}
+.nav-btn{background:var(--gold);color:var(--black);border:none;padding:9px 20px;border-radius:var(--r);font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.06em;cursor:pointer;transition:all .2s;}
+.nav-btn:hover{background:var(--gold2);}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;padding:120px 40px 80px;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.025) 1px,transparent 1px);background-size:60px 60px;}
+.hero-inner{max-width:var(--max);margin:0 auto;width:100%;position:relative;z-index:2;}
+.hero-tag{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px;margin-bottom:20px;}
+.hero-tag::before{content:'';width:28px;height:1px;background:var(--gold);}
+.hero-title{font-family:var(--display);font-size:clamp(56px,7vw,104px);line-height:.9;color:var(--white);letter-spacing:.02em;margin-bottom:8px;}
+.hero-title-gold{font-family:var(--serif);font-size:clamp(48px,6.5vw,96px);font-style:italic;font-weight:700;color:var(--gold);line-height:.95;letter-spacing:-.01em;display:block;}
+.hero-sub{font-family:var(--serif);font-size:clamp(16px,2vw,22px);font-style:italic;color:var(--cream2);line-height:1.5;max-width:580px;margin:24px 0 36px;}
+.hero-desc{font-size:14px;line-height:1.8;color:var(--muted);max-width:520px;margin-bottom:48px;}
+.hero-desc strong{color:var(--cream);}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:60px;}
+.btn-gold{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--black);border:none;padding:14px 28px;border-radius:var(--r);font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.06em;cursor:pointer;transition:all .22s;}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-1px);}
+.btn-outline{display:inline-flex;align-items:center;gap:8px;background:transparent;color:var(--cream);border:1px solid rgba(255,255,255,.2);padding:14px 28px;border-radius:var(--r);font-family:var(--sans);font-size:13px;font-weight:500;cursor:pointer;transition:all .22s;}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold);}
+.hero-stats{display:flex;gap:40px;padding-top:32px;border-top:1px solid var(--border);}
+.hero-stat-n{font-family:var(--serif);font-size:32px;font-weight:700;color:var(--gold);line-height:1;}
+.hero-stat-l{font-size:11px;color:var(--muted);margin-top:2px;letter-spacing:.05em;}
+
+/* ── TIERS ── */
+#tiers{background:var(--dark);padding:100px 40px;border-top:1px solid var(--border);}
+.section-inner{max-width:var(--max);margin:0 auto;}
+.section-tag{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.section-title{font-family:var(--serif);font-size:clamp(32px,4vw,52px);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:16px;}
+.section-sub{font-size:15px;color:var(--muted);max-width:540px;line-height:1.75;margin-bottom:56px;}
+.tiers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);}
+.tier{background:var(--dark2);padding:36px 32px;position:relative;}
+.tier-badge{font-family:var(--sans);font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.tier-name{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--white);margin-bottom:6px;}
+.tier-desc{font-size:13px;color:var(--muted);margin-bottom:24px;line-height:1.6;}
+.tier-price{font-family:var(--sans);font-size:13px;font-weight:600;color:var(--gold);margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--border2);}
+.tier-features{display:flex;flex-direction:column;gap:10px;margin-bottom:28px;}
+.tier-feature{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--cream2);line-height:1.5;}
+.tier-feature svg{flex-shrink:0;margin-top:2px;}
+.tier-feature.no{color:var(--muted);}
+.tier-cta{width:100%;padding:12px;border-radius:var(--r);font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.06em;cursor:pointer;transition:all .2s;border:1px solid var(--border2);background:transparent;color:var(--cream);}
+.tier-cta:hover{border-color:var(--gold);color:var(--gold);}
+.tier-cta.primary{background:var(--gold);color:var(--black);border-color:var(--gold);}
+.tier-cta.primary:hover{background:var(--gold2);}
+.tier-featured{border-top:3px solid var(--gold);}
+
+/* ── FEATURES ── */
+#features{background:var(--black);padding:100px 40px;border-top:1px solid var(--border);}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:56px;}
+.feature{background:var(--dark2);padding:36px 28px;}
+.feature-icon{width:44px;height:44px;border-radius:50%;background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.2);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+.feature-title{font-family:var(--serif);font-size:20px;font-weight:700;color:var(--white);margin-bottom:10px;}
+.feature-desc{font-size:13px;color:var(--muted);line-height:1.7;}
+
+/* ── APPLICATION FORM ── */
+#apply{background:var(--dark2);padding:100px 40px;border-top:1px solid var(--border);}
+.apply-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.apply-left{}
+.apply-title{font-family:var(--serif);font-size:clamp(32px,4vw,48px);font-weight:700;color:var(--white);line-height:1.1;margin-bottom:16px;}
+.apply-sub{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:32px;}
+.apply-who{display:flex;flex-direction:column;gap:12px;}
+.apply-who-item{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--cream2);}
+.apply-who-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;}
+form{display:flex;flex-direction:column;gap:16px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+label{font-family:var(--sans);font-size:10px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:6px;}
+input,select,textarea{width:100%;background:var(--dark3);border:1px solid var(--border2);border-radius:var(--r);padding:12px 16px;font-family:var(--sans);font-size:14px;color:var(--cream);outline:none;transition:border-color .2s;}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);}
+select option{background:var(--dark3);}
+textarea{resize:vertical;min-height:100px;}
+.form-submit{background:var(--gold);color:var(--black);border:none;padding:14px 28px;border-radius:var(--r);font-family:var(--sans);font-size:13px;font-weight:600;letter-spacing:.06em;cursor:pointer;transition:all .22s;width:100%;}
+.form-submit:hover{background:var(--gold2);}
+#formMsg{display:none;padding:14px 18px;background:rgba(201,168,76,.1);border:1px solid var(--gold3);border-radius:var(--r);font-size:14px;color:var(--cream2);line-height:1.6;}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);border-top:1px solid var(--border);padding:48px 40px 32px;}
+.footer-inner{max-width:var(--max);margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
+.footer-brand{font-family:var(--display);font-size:20px;letter-spacing:.04em;color:var(--white);}
+.footer-brand span{color:var(--gold);}
+.footer-links{display:flex;gap:24px;font-size:12px;color:var(--muted);}
+.footer-links a:hover{color:var(--gold);}
+.footer-bottom{max-width:var(--max);margin:24px auto 0;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:11px;color:var(--muted);}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
+.hero-tag{animation:fadeUp .6s ease both;}
+.hero-title{animation:fadeUp .7s ease .1s both;}
+.hero-sub{animation:fadeUp .7s ease .2s both;}
+.hero-desc{animation:fadeUp .7s ease .3s both;}
+.hero-actions{animation:fadeUp .7s ease .4s both;}
+.hero-stats{animation:fadeUp .7s ease .5s both;}
+
+/* ── MOBILE ── */
+@media(max-width:768px){
+  .nav-domain{display:none;}
+  #hero{padding:100px 20px 60px;}
+  .hero-stats{gap:24px;flex-wrap:wrap;}
+  .tiers-grid,.features-grid{grid-template-columns:1fr;}
+  #tiers,#features,#apply{padding:60px 20px;}
+  .apply-grid{grid-template-columns:1fr;gap:40px;}
+  .form-row{grid-template-columns:1fr;}
+  .footer-inner{flex-direction:column;gap:20px;text-align:center;}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div>
+      <div class="nav-brand">AI <span>SOVEREIGNTY</span> NETWORK</div>
+      <div class="nav-domain">aisovereignty.network</div>
+    </div>
+    <a href="#apply" class="nav-btn">Apply for Membership</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-tag">Africa's AI Sovereignty Leadership Community</div>
+    <h1 class="hero-title">
+      AI<br>
+      <span class="hero-title-gold">Sovereignty</span><br>
+      Network
+    </h1>
+    <p class="hero-sub">Where Africa's AI future is decided — by Africans.</p>
+    <p class="hero-desc">
+      A closed community of <strong>ministers, central bank governors, regulators, enterprise leaders, and innovators</strong> collaborating to build sovereign AI ecosystems across all 54 African nations. Access strategic intelligence, peer collaboration, and the AI Sovereignty Framework™.
+    </p>
+    <div class="hero-actions">
+      <a href="#apply" class="btn-gold">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        Apply for Membership
+      </a>
+      <a href="https://www.aiorbeowned.africa" class="btn-outline" target="_blank">
+        Visit aiorbeowned.africa →
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-n">54</div>
+        <div class="hero-stat-l">African Nations</div>
+      </div>
+      <div>
+        <div class="hero-stat-n">3</div>
+        <div class="hero-stat-l">Membership Tiers</div>
+      </div>
+      <div>
+        <div class="hero-stat-n">7</div>
+        <div class="hero-stat-l">Sovereignty Pillars</div>
+      </div>
+      <div>
+        <div class="hero-stat-n">Dr. SB</div>
+        <div class="hero-stat-l">Founded by Dr. Benjamin</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section id="tiers">
+  <div class="section-inner">
+    <div class="section-tag">Membership Tiers</div>
+    <h2 class="section-title">Three Circles of Sovereignty</h2>
+    <p class="section-sub">The AI Sovereignty Network operates as a tiered community — from open intelligence access to the inner council of African decision-makers shaping the continent's AI future.</p>
+    <div class="tiers-grid">
+      <!-- Observer -->
+      <div class="tier">
+        <div class="tier-badge">Tier 1 — Public</div>
+        <div class="tier-name">Observer</div>
+        <div class="tier-desc">Open to all. Register with email verification to access public intelligence and resources.</div>
+        <div class="tier-price">Free · Open registration</div>
+        <div class="tier-features">
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Public intelligence briefings
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Executive Brief download
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Events calendar access
+          </div>
+          <div class="tier-feature no">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B94A0" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Member forums
+          </div>
+          <div class="tier-feature no">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B94A0" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            Member directory
+          </div>
+        </div>
+        <button class="tier-cta" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">Register Free</button>
+      </div>
+      <!-- Network Member -->
+      <div class="tier tier-featured">
+        <div class="tier-badge">Tier 2 — Application</div>
+        <div class="tier-name">Network Member</div>
+        <div class="tier-desc">For senior leaders in government, finance, enterprise, and policy. Application reviewed by Dr. Benjamin.</div>
+        <div class="tier-price">Free · By application only</div>
+        <div class="tier-features">
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Everything in Observer
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Discussion forums by pillar
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Searchable member directory
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Monthly intelligence briefings
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Full resource library access
+          </div>
+        </div>
+        <button class="tier-cta primary" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">Apply Now</button>
+      </div>
+      <!-- Inner Council -->
+      <div class="tier">
+        <div class="tier-badge">Tier 3 — Invitation</div>
+        <div class="tier-name">Inner Council</div>
+        <div class="tier-desc">Personal invitation by Dr. Benjamin. Ministers, central bank governors, and senior heads of institution.</div>
+        <div class="tier-price">By direct invitation only</div>
+        <div class="tier-features">
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Everything in Member
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Private council forums
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Quarterly virtual roundtables
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Direct access to Dr. Benjamin
+          </div>
+          <div class="tier-feature">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            Annual AI Sovereignty Summit
+          </div>
+        </div>
+        <button class="tier-cta" onclick="document.getElementById('apply').scrollIntoView({behavior:'smooth'})">Express Interest</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-inner">
+    <div class="section-tag">Platform Features</div>
+    <h2 class="section-title">Built for Africa's AI Leaders</h2>
+    <p class="section-sub">Every feature is designed for the specific intelligence and collaboration needs of government ministers, central bank governors, regulators, and enterprise leaders.</p>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+        </div>
+        <div class="feature-title">Intelligence Center</div>
+        <div class="feature-desc">Exclusive briefings, frameworks, and strategic analysis on AI sovereignty, digital policy, and African AI developments — curated by Dr. Benjamin and the network.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <div class="feature-title">Member Directory</div>
+        <div class="feature-desc">A searchable directory of verified senior leaders across 54 African nations — searchable by country, sector, institution type, and expertise area.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="feature-title">Discussion Forums</div>
+        <div class="feature-desc">Structured conversations organised by the 7 pillars of the AI Sovereignty Framework™ — Data, Infrastructure, Capability, Talent, Finance, Regulation, and Partnerships.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="feature-title">Events & Roundtables</div>
+        <div class="feature-desc">Quarterly virtual roundtables for Inner Council, monthly webinars for all members, and an annual in-person AI Sovereignty Summit for the full network.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+        </div>
+        <div class="feature-title">Resource Library</div>
+        <div class="feature-desc">The AI Sovereignty Framework™, policy templates, procurement governance tools, national AI strategy blueprints, and the full Executive Brief archive.</div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feature-title">Sovereignty Index™</div>
+        <div class="feature-desc">Early access to the Africa AI Sovereignty Index™ — the first independent ranking of all 54 nations on AI sovereignty progress. Launching 2027.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section id="apply">
+  <div class="section-inner">
+    <div class="apply-grid">
+      <div class="apply-left">
+        <div class="section-tag" style="margin-bottom:12px;">Membership Application</div>
+        <h2 class="apply-title">Apply to Join the Network</h2>
+        <p class="apply-sub">The AI Sovereignty Network is a curated community. Every application is personally reviewed by Dr. Sanjay Benjamin. We welcome senior leaders who are actively engaged in building Africa's AI future.</p>
+        <div class="apply-who">
+          <div class="apply-who-item"><div class="apply-who-dot"></div>Government Ministers & Deputy Ministers</div>
+          <div class="apply-who-item"><div class="apply-who-dot"></div>Central Bank Governors & Deputies</div>
+          <div class="apply-who-item"><div class="apply-who-dot"></div>Regulators & Policy Leaders</div>
+          <div class="apply-who-item"><div class="apply-who-dot"></div>Enterprise CEOs & C-Suite Leaders</div>
+          <div class="apply-who-item"><div class="apply-who-dot"></div>Development Agency Directors</div>
+          <div class="apply-who-item"><div class="apply-who-dot"></div>AI Researchers & Policy Experts</div>
+        </div>
+        <div style="margin-top:36px;padding:20px 24px;background:var(--dark3);border:1px solid var(--border2);border-left:3px solid var(--gold);border-radius:var(--r);">
+          <div style="font-size:11px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:6px;">Response time</div>
+          <div style="font-size:13px;color:var(--cream2);line-height:1.6;">Applications are reviewed within 5 business days. All submissions are treated with strict confidentiality.</div>
+        </div>
+      </div>
+      <div>
+        <form id="applicationForm" onsubmit="handleApplication(event)">
+          <div class="form-row">
+            <div>
+              <label>First Name *</label>
+              <input type="text" name="first_name" required placeholder="First name">
+            </div>
+            <div>
+              <label>Last Name *</label>
+              <input type="text" name="last_name" required placeholder="Last name">
+            </div>
+          </div>
+          <div>
+            <label>Email Address *</label>
+            <input type="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div>
+            <label>Title & Organisation *</label>
+            <input type="text" name="organisation" required placeholder="Minister of Technology, Government of Kenya">
+          </div>
+          <div class="form-row">
+            <div>
+              <label>Country *</label>
+              <input type="text" name="country" required placeholder="Country">
+            </div>
+            <div>
+              <label>Sector *</label>
+              <select name="sector" required>
+                <option value="" disabled selected>Select sector</option>
+                <option>Government / Public Sector</option>
+                <option>Central Bank / Financial Regulation</option>
+                <option>Enterprise / Corporate</option>
+                <option>Development Agency / NGO</option>
+                <option>Academic / Research</option>
+                <option>Technology / Startup</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label>Membership Tier Sought *</label>
+            <select name="tier" required>
+              <option value="" disabled selected>Select tier</option>
+              <option>Observer — Free public access</option>
+              <option>Network Member — Application based</option>
+              <option>Inner Council — Senior invitation tier</option>
+            </select>
+          </div>
+          <div>
+            <label>Why do you want to join? *</label>
+            <textarea name="motivation" required rows="4" placeholder="Briefly describe your work on AI policy, digital sovereignty, or technology governance in Africa..."></textarea>
+          </div>
+          <div>
+            <label>How did you hear about the network?</label>
+            <input type="text" name="referral" placeholder="LinkedIn, colleague, aiorbeowned.africa...">
+          </div>
+          <button type="submit" class="form-submit" id="appBtn">Submit Application →</button>
+          <div id="formMsg">
+            ✓ Your application has been received. Dr. Benjamin's team will review it and respond within 5 business days. Thank you for your interest in building Africa's sovereign AI future.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">AI <span>SOVEREIGNTY</span> NETWORK</div>
+      <div style="font-size:11px;color:var(--muted);margin-top:4px;">aisovereignty.network</div>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.aiorbeowned.africa" target="_blank">aiorbeowned.africa</a>
+      <a href="mailto:contact@aiorbeowned.africa">contact@aiorbeowned.africa</a>
+      <a href="https://www.linkedin.com/in/sanjaybenjamin" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 AI Sovereignty Network · Dr. Sanjay Benjamin. All rights reserved.</span>
+    <span>Founded by Dr. Sanjay Benjamin · +256 791 233 607</span>
+  </div>
+</footer>
+
+<script>
+async function handleApplication(e){
+  e.preventDefault();
+  const btn = document.getElementById('appBtn');
+  const msg = document.getElementById('formMsg');
+  btn.textContent = 'Submitting…';
+  btn.disabled = true;
+  try{
+    const res = await fetch('https://formspree.io/f/xaqkknaz',{
+      method:'POST',
+      body: new FormData(e.target),
+      headers:{'Accept':'application/json'}
+    });
+    if(res.ok){
+      msg.style.display = 'block';
+      e.target.reset();
+      btn.textContent = 'Application Submitted ✓';
+      btn.style.background = '#8A6B28';
+    } else {
+      btn.textContent = 'Error — please email us directly';
+      btn.disabled = false;
+    }
+  } catch(err){
+    btn.textContent = 'Error — please email us directly';
+    btn.disabled = false;
+  }
+}
+</script>
+</body>
+</html>
